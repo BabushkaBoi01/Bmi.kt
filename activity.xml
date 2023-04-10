@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MissingConstraints"
+    android:background="@color/layout_background">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvWeight"
+        android:layout_width="324dp"
+        android:layout_height="135dp"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp"
+        app:cardMaxElevation="15dp"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="67dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="324dp"
+            android:layout_height="135dp">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:text="Weight : "
+                android:textSize="30dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <EditText
+                android:id="@+id/weightTxt"
+                android:layout_width="136dp"
+                android:layout_height="57dp"
+                android:hint="0"
+                android:textColor="@color/text_hint"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="66dp" />
+
+            <TextView
+                android:layout_width="109dp"
+                android:layout_height="44dp"
+                android:text="Kg"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="159dp"
+                tools:layout_editor_absoluteY="79dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvHeight"
+        android:layout_width="324dp"
+        android:layout_height="135dp"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp"
+        app:cardMaxElevation="15dp"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="225dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="324dp"
+            android:layout_height="135dp">
+
+            <TextView
+                android:layout_width="144dp"
+                android:layout_height="45dp"
+                android:text="Height : "
+                android:textSize="30dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <EditText
+                android:id="@+id/heightTxt"
+                android:layout_width="138dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="16dp"
+                android:hint="0"
+                android:textColor="@color/text_hint"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="63dp" />
+
+            <TextView
+                android:layout_width="106dp"
+                android:layout_height="35dp"
+                android:text="Cm"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="160dp"
+                tools:layout_editor_absoluteY="92dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/calculateBtn"
+        android:layout_width="328dp"
+        android:layout_height="57dp"
+        android:layout_margin="40sp"
+        android:backgroundTint="@color/card_background"
+        android:text="CALCULATE"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:cornerRadius="40sp"
+
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="386dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvResult"
+        android:layout_width="324dp"
+        android:layout_height="237dp"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="15dp"
+        app:cardMaxElevation="15dp"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="489dp">
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:layout_marginTop="10sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
